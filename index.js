@@ -25,7 +25,7 @@ export class NhDownloader extends plugin {
             ]
         });
 
-        this.cfg = yaml.parse(fs.readFileSync('./plugins/nh-downloader/config/config.yaml', 'utf8'));
+        this.cfg = yaml.parse(fs.readFileSync('./plugins/Nhentai-Helper/config/config.yaml', 'utf8'));
         this.searcher = new NhentaiSearch();
         this.recallTimers = new Map();
     }
@@ -142,7 +142,7 @@ export class NhDownloader extends plugin {
     }
 
     async cleanTemp(e) {
-        const tempDir = './plugins/nh-downloader/temp';
+        const tempDir = './plugins/Nhentai-Helper/temp';
         try {
             if (fs.existsSync(tempDir)) {
                 fs.rmSync(tempDir, { recursive: true, force: true });
@@ -157,21 +157,21 @@ export class NhDownloader extends plugin {
     async setCookie(e) {
         const cookie = e.msg.replace(/^#nh设置cookie\s+/, '').trim();
         this.cfg.nhentai.cookie = cookie;
-        fs.writeFileSync('./plugins/nh-downloader/config/config.yaml', yaml.stringify(this.cfg));
+        fs.writeFileSync('./plugins/Nhentai-Helper/config/config.yaml', yaml.stringify(this.cfg));
         e.reply('✅ Cookie已设置');
     }
 
     async toggleProgress(e) {
         const action = e.msg.match(/开|关/)[0];
         this.cfg.download.show_progress = (action === '开');
-        fs.writeFileSync('./plugins/nh-downloader/config/config.yaml', yaml.stringify(this.cfg));
+        fs.writeFileSync('./plugins/Nhentai-Helper/config/config.yaml', yaml.stringify(this.cfg));
         e.reply(`✅ 进度提示已${action === '开' ? '开启' : '关闭'}`);
     }
 
     async toggleScreenshot(e) {
         const action = e.msg.match(/开|关/)[0];
         this.cfg.search.show_screenshot = (action === '开');
-        fs.writeFileSync('./plugins/nh-downloader/config/config.yaml', yaml.stringify(this.cfg));
+        fs.writeFileSync('./plugins/Nhentai-Helper/config/config.yaml', yaml.stringify(this.cfg));
         e.reply(`✅ 搜索截图已${action === '开' ? '开启' : '关闭'}`);
     }
 
