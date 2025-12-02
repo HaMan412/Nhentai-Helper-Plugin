@@ -78,7 +78,11 @@ csrftoken=d58fUkNueyIGb04GMcwerfszg; sessionid=9tqsgx2uvTn7MlMldfawdwa
 | `#nh清理` | 清理临时文件 |
 
 ## 📷 示例
+### 下载
 ![](https://github.com/HaMan412/Nhentai-Helper-Plugin/blob/main/img/8f28fef8a2650099d8f7a324a1fdbe06.png)
+### 搜索
+![](https://github.com/HaMan412/Nhentai-Helper-Plugin/blob/main/img/e45eae4941391b6303fe315394645d05.png)
+### 搜索带网页截图的就不放了
 
 ## 💡 提示
 
