@@ -1,0 +1,63 @@
+nhentai:
+# 必填cookies嗷
+  cookie: csrftoken=;
+    sessionid=
+# 代理
+  proxy: http://127.0.0.1:7897
+# 黑名单用户 (让某人不可用)
+permission:
+  blacklist: []
+# 白名单群聊 (授权群聊可用)
+  whitelist_groups:
+    - 1234567890
+    - 1145141919
+download:
+# 多线程下载
+  concurrent: 5
+# 超时时间
+  timeout: 30
+# 下载进度提示 (群内)
+  show_progress: false
+# 下载日志 (后台)
+  show_log: true
+search:
+# 搜索时是否显示网页截图 （小心内鬼）
+  show_screenshot: false
+upload:
+# 上传文件大小限制 (MB)
+  max_size: 500
+
+# 自定义帮助文本 (不会排版，可以自己改改)
+messages:
+  help: |
+    Nhentai-Helper 帮助
+    
+    nh搜索
+    搜索漫画，返回ID列表
+    示例：nh搜索 东方Project
+    
+    nh下载 ID
+    示例：nh下载 123456
+    
+    #nh配置
+    查看当前配置
+    
+    #nh截图 开/关
+    搜索时是否显示网页截图
+    (默认关闭，会产生成人内容)
+    
+    💡 提示：截图会在2分钟后自动撤回
+  
+  config_header: "📋 Nhentai配置"
+  config_cookie_label: "🍪 Cookie"
+  config_proxy_label: "🌐 代理"
+  config_progress_label: "📊 进度提示"
+  config_log_label: "📝 后台日志"
+  config_screenshot_label: "📷 搜索截图"
+  config_blacklist_label: "📛 黑名单用户"
+  config_whitelist_label: "✅ 白名单群"
+  config_status_on: "开启"
+  config_status_off: "关闭"
+  config_status_configured: "已配置"
+  config_status_not_configured: "未配置"
+  config_status_none: "无"
