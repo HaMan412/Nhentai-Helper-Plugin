@@ -77,6 +77,9 @@ csrftoken=d58fUkNueyIGb04GMcwerfszg; sessionid=9tqsgx2uvTn7MlMldfawdwa
 | `#nh配置` | 查看当前配置 |
 | `#nh清理` | 清理临时文件 |
 
+## 📷 示例
+![](https://github.com/HaMan412/Nhentai-Helper-Plugin/blob/main/img/8f28fef8a2650099d8f7a324a1fdbe06.png)
+
 ## 💡 提示
 
 - 搜索功能**不需要**Cookie
