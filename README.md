@@ -16,7 +16,7 @@
 git clone https://github.com/HaMan412/Nhentai-Helper-Plugin.git ./plugins/Nhentai-Helper
 
 # 安装依赖
-cd /plugins/Nhentai-Helper
+cd plugins/Nhentai-Helper
 pnpm i
 ```
 
