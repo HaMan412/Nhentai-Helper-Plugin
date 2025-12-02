@@ -1,4 +1,4 @@
-# Nhentai 下载器
+# Nhentai助手
 
 > 为Yunzai提供Nhentai搜索和下载功能的插件
 
